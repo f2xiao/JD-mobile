@@ -22,6 +22,15 @@ a {
   text-decoration: none;
   color: #666;
 }
+.clearfix {
+  overflow: auto;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* app */
 .app {
   height: 45px;
   background: #333333;
@@ -53,6 +62,7 @@ a {
   width: 25%;
   background: #f63515;
 }
+/* search */
 .search-wrap {
   position: fixed;
   height: 44px;
@@ -123,6 +133,7 @@ a {
   background-size: 200px;
   margin: 8px 0 0 5px;
 }
+/* brand */
 .slider img {
   width: 100%;
 }
@@ -137,6 +148,7 @@ a {
 .brand div img {
   width: 100%;
 }
+/* nav */
 .nav a:link,
 .nav a:visited {
   float: left;
@@ -151,4 +163,23 @@ a {
   display: block;
   font-size: 12px;
   margin-top: 6px;
+}
+/* news */
+.news {
+  margin-top: 20px;
+}
+.news a {
+  float: left;
+  display: block;
+  box-sizing: border-box;
+}
+.news a:nth-child(1) {
+  width: 50%;
+}
+.news a:nth-child(n + 2) {
+  width: 25%;
+  border-left: 1px solid #ddd;
+}
+.news a img {
+  width: 100%;
 }
