@@ -18,6 +18,10 @@ ul {
 img {
   vertical-align: middle;
 }
+a {
+  text-decoration: none;
+  color: #666;
+}
 .app {
   height: 45px;
   background: #333333;
@@ -50,8 +54,11 @@ img {
   background: #f63515;
 }
 .search-wrap {
-  position: relative;
+  position: fixed;
   height: 44px;
+  width: 100%;
+  max-width: 640px;
+  min-width: 320px;
   background: #e43130;
   overflow: hidden;
   color: #fff;
@@ -82,8 +89,66 @@ img {
 }
 
 .search {
+  position: relative;
   height: 30px;
   background: #f7f7f7;
   border-radius: 15px;
   margin: 7px 50px;
+}
+.search div {
+  float: left;
+}
+.jd-icon {
+  position: relative;
+  width: 20px;
+  height: 15px;
+  margin: 8px 8px 0 15px;
+  background: url(../images/jd.png) no-repeat;
+  background-size: 20px 15px;
+}
+.jd-icon::after {
+  position: absolute;
+  top: 0;
+  left: 26px;
+  content: "";
+  display: block;
+  width: 1px;
+  height: 16px;
+  background: #ddd;
+}
+.sou {
+  width: 18px;
+  height: 15px;
+  background: url(../images/jd-sprites.png) -80px 0;
+  background-size: 200px;
+  margin: 8px 0 0 5px;
+}
+.slider img {
+  width: 100%;
+}
+.brand {
+  border-radius: 30px 30px 0 0;
+  overflow: hidden;
+}
+.brand div {
+  float: left;
+  width: 33.33%;
+}
+.brand div img {
+  width: 100%;
+}
+.nav a:link,
+.nav a:visited {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+.nav a img {
+  width: 40px;
+  margin-top: 10px;
+}
+.nav a span {
+  display: block;
+  font-size: 12px;
+  margin-top: 6px;
 }
