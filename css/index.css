@@ -55,8 +55,6 @@ img {
   background: #e43130;
   overflow: hidden;
   color: #fff;
-  text-align: center;
-  line-height: 44px;
 }
 .search-btn {
   position: absolute;
@@ -64,6 +62,13 @@ img {
   left: 0;
   width: 40px;
   height: 100%;
+}
+.search-btn::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 18px;
+  margin: 14px 0 0 15px;
   background: url(../images/s-btn.png) no-repeat center center;
   background-size: 20px;
 }
@@ -73,7 +78,9 @@ img {
   right: 0;
   width: 40px;
   height: 100%;
+  line-height: 44px;
 }
+
 .search {
   height: 30px;
   background: #f7f7f7;
